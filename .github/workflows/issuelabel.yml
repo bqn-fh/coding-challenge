@@ -8,8 +8,8 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - name: Apply label
-        uses: ahmadnassri/action-labeler@v1.0.4
+      - name: Label new issues
+        uses: jasonetco/simple-issue-labeler@v1.0.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           default_label: 'new issue'
